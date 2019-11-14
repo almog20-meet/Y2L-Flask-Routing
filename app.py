@@ -14,7 +14,10 @@ def hello_world():
 def store():
 	return render_template("store.html")
 
-#####################
+@app.route('/cart')
+def cart():
+	return render_template("cart.html")
+	#####################
 
 
 if __name__ == '__main__':
